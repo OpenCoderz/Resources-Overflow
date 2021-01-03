@@ -1,0 +1,195 @@
+/* 
+
+COMMON STYLES	
+
+*/
+:root	
+{
+	--primary-color:white;
+	--secondary-color:#7cc6fe;
+}
+body
+{
+margin:0;
+padding: 0;
+font-family:"Sans-serif";
+line-height: 1.4;
+background-color: var(--primary-color);
+}
+.smallline
+{
+width: 20px;
+border: 1px solid;
+margin-top: 3px;
+}
+/* 
+
+NAVIGATION STYLES	
+
+*/
+nav
+{
+display: flex;
+justify-content: space-between;
+padding-top:10px; 
+background-color: black;
+color: white;
+}
+.lines
+{
+display: none;
+}
+.crosslines
+{
+display: none;
+position: absolute;
+color: white;
+top: 0;
+right: 10px;
+font-size: 30px;
+}
+.crosslines:after
+{
+content: "x";
+font-weight: 300;
+font-family: Arial;
+}
+.nav_brand 
+{
+display: inline;
+margin-top: -14px;
+}
+.nav_brand img
+{
+height: 65px;
+}
+.nav_list
+{
+display: flex;
+justify-content: space-between;
+list-style: none;	
+padding: 0;
+margin:0;
+}
+.nav_item
+{
+margin:0 20px;
+padding: 10px;
+}
+/*Cards styles*/
+.categories_cards
+{	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.categorie_card
+{
+	width: 300px;
+	height: 300px;
+	color: white;
+	background-color:black;
+	margin: 10px;
+	border-radius: 10px;
+}
+.card_body
+{
+	
+}
+.card_heading
+{
+	text-align: center;
+}
+.card_img
+{
+
+}
+.card_footer
+{
+	text-align: center;
+}
+.card_footer a
+{
+}
+
+/*media query for tab  and mobile*/
+@media screen and (max-width:767px )
+{
+/* 
+
+COMMON STYLES	
+
+*/
+h1
+{
+font-size: 1.3rem;
+}
+.lines
+{
+display: block;
+position: absolute;
+top: 13px;
+right: 10px;
+}
+.crosslines_show
+{
+display: block;
+z-index: 10;
+}
+.lines_hide
+{
+display: none;
+}
+
+/* 
+
+NAVIGATION STYLES	
+
+*/
+nav
+{
+display: flex;
+justify-content: flex-start;
+}
+.nav_brand 
+{
+height: 45px;
+}
+
+.nav_opt
+{
+z-index: 10;
+}
+.nav_list
+{
+display: none;
+background-color: black;
+list-style: none;
+margin:0;
+width: 100vw;
+margin-left: -111px;
+margin-top: -75px;
+padding-top: 30px;
+text-align: center;
+transform: translateY(-362px);
+transition: transform 0.2s;
+}
+.nav_list_margin
+{
+margin-top: -40px;
+}
+.nav_list_show
+{
+margin: auto;
+transform: translateY(0);	
+display: block;
+}	
+.nav_item
+{
+margin:30px auto;
+}
+.login_but
+{
+width: 98px;
+}
